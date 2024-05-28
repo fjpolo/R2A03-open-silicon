@@ -1,26 +1,29 @@
 # Tiny Tapeout project information
 project:
-  title:        "Zilog Z80"      # Project title
-  author:       "ReJ aka Renaldas Zioma"      # Your name
-  discord:      "rzioma"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Z80 open-source silicon. Goal is to become a silicon proven, pin compatible, open-source replacement for classic Z80."      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     16000000       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "Ricoh 2A03"                                                                            # Project title
+  author:       "@fjpolo  "                                                                             # Your name
+  discord:      "@fjpolo"                                                                               # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Ricoh 2A03 open-source silicon. This is a toy project towards FamiCom emulation."      # One line description of what your project does
+  language:     "Verilog"                                                                               # Other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     16000000                                                                                # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "4x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_rejunity_z80"      # Your top module name
+  top_module:  "tt_um_fjpolo_r2a03"                                                                     # Your top module name
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
-    - "tv80/tv80_alu.v"
-    - "tv80/tv80_reg.v"
-    - "tv80/tv80_mcode.v"
-    - "tv80/tv80_core.v"
-    - "tv80/tv80s.v"
-    - "tt_um_rejunity_z80.v"
+    - "R2A03/apu.v"
+    - "R2A03/dma.v"
+    - "R2A03/ppu.v"
+    - "R2A03/top.v"
+    - "R2A03/t65/T65_ALU.v"
+    - "R2A03/t65/T65_MCode.v"
+    - "R2A03/t65/T65_Pack.v"
+    - "R2A03/t65/T65.v"
+    - "tt_um_fjpolo_r2a03.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:

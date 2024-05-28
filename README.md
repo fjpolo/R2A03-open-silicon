@@ -53,13 +53,13 @@ Browse [issues](https://github.com/rejunity/z80-open-silicon/issues).
 For project overview, take a look at the [slide deck](https://docs.google.com/presentation/d/1-vcqAm9nMe9o_P5PAofOEgkbrVqfZs-Lbs7DuWj7h2o/edit#slide=id.p) and [video](https://www.youtube.com/watch?v=GI1e22A2J3U) where we discuss FOSS Z80 project with Matthew Venn.
 
 Code:
-* You can find the top module in [src/tt_um_rejunity_z80.v](src/tt_um_rejunity_z80.v). It instantiates Z80 and adheres to [TinyTapeout constraints](https://tinytapeout.com/specs/gpio/) including multiplexing the output pins onto the 8 pins of TinyTapeout chip.
+* You can find the top module in [src/tt_um_fjpolo_r2a03.v](src/tt_um_fjpolo_r2a03.v). It instantiates Z80 and adheres to [TinyTapeout constraints](https://tinytapeout.com/specs/gpio/) including multiplexing the output pins onto the 8 pins of TinyTapeout chip.
 * The core Verilog Z80 implementation is in [src/tv80](src/tv80) folder.
 * The configuration for [OpenROAD](https://theopenroadproject.org) synthesis and place-and-route flow is in the [src/config.tcl](src/config.tcl) file.
 * Finally, the testbench is implemented in [src/test/test.py](src/test/test.py).
 
 Generated layout artifacts are in [gds](gds) folder. You can use [KLayout](https://www.klayout.de) viewer to inspect them:
-* [GDSII file of Z80 core](gds/tinytapeout_07_skywater130A/tt_um_rejunity_z80.gds)
+* [GDSII file of Z80 core](gds/tinytapeout_07_skywater130A/tt_um_fjpolo_r2a03.gds)
 * [OASIS file of the Tiny Tapeout 07 chip with the Z80 core](gds/tinytapeout_07_skywater130A/caravel_24066810.oas)
 
 ## Run it locally

@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_rejunity_z80
+MACRO tt_um_fjpolo_r2a03
   CLASS BLOCK ;
-  FOREIGN tt_um_rejunity_z80 ;
+  FOREIGN tt_um_fjpolo_r2a03 ;
   ORIGIN 0.000 0.000 ;
   SIZE 334.880 BY 225.760 ;
   PIN VGND
@@ -487,6 +487,6 @@ MACRO tt_um_rejunity_z80
         RECT 250.680 2.080 317.105 223.680 ;
         RECT 3.975 0.175 317.105 2.080 ;
   END
-END tt_um_rejunity_z80
+END tt_um_fjpolo_r2a03
 END LIBRARY
 
